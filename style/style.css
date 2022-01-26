@@ -325,7 +325,7 @@ section.recommended {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1.3fr 0.7fr;
-  gap: 0px 20px;
+  gap: 0 20px;
   grid-auto-flow: row;
   grid-template-areas:
     ". . . ."
@@ -373,7 +373,7 @@ button#recommended-cta {
   grid-area: cta-outline;
 }
 
-/*NIKE SELCTION*/
+/*NIKE SELECTION*/
 
 section.nike-selection {
   display: flex;
@@ -587,8 +587,7 @@ footer {
 }
 
 #logo-footer {
-  margin: 0;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
 }
 
 .col {
