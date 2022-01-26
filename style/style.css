@@ -1,0 +1,599 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.custom-container-blog {
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*NAVBAR*/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 80px;
+  margin: 20px;
+}
+
+.shop-icon {
+  display: flex;
+
+}
+
+.cart, .account, .favorite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.fa-shopping-cart, .fa-user-circle, .fa-heart {
+  font-size: 25px;
+  color: black;
+}
+
+.notification {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.notification span {
+  font-size: 14px;
+  color: white;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #DFDFDF;
+  border-radius: 5px;
+}
+
+.search-input {
+  width: 600px;
+  border: none;
+  height: 100%;
+  padding-left: 10px;
+  outline: none;
+}
+
+.search-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.search-btn i {
+  font-size: 25px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 50px;
+}
+
+.nav-links li {
+  list-style-type: none;
+  padding: 10px 15px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+}
+
+select {
+  padding: 13px 15px;
+  border-radius: 5px;
+  border: 1px solid #efefef;
+  background-color: #f8f8f8;
+  outline: none;
+}
+
+/* select::before {
+  content: "/f0c9";
+  font-family: "fontAwesome", sans-serif;
+  font-weight: 900;
+} */
+
+/*HERO*/
+
+section.hero {
+  position: relative;
+  background-image: url(../assets/vincentiu-solomon-ln5drpv_ImI-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* filter: grayscale(60%); */
+}
+
+section.hero::after {
+  content: "";
+  height: 807px;
+  display: block;
+  background-color: rgba(70, 70, 70, 0.3);
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 50px;
+}
+
+.hero-content h1 {
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.cta {
+  padding: 13px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cta-hero {
+  background-color: #ff4f04;
+  margin-right: 15px;
+}
+
+.iphone-hero {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /* max-width: 52%; */
+  /* height: auto; */
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1900px) {
+  .iphone-hero {
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .iphone-hero {
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+  .hero-content {
+    max-width: 40%;
+  }
+}
+
+/*SECTION VISION*/
+
+section.vision {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vision-content {
+  max-width: 50%;
+}
+
+.vision-content p {
+  margin: 15px 0;
+}
+
+.img-vision-wrapper {
+  width: 500px;
+  height: 500px;
+}
+
+img.vision-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*CTA BANNER*/
+
+section.cta-banner {
+  position: relative;
+  height: 250px;
+  background-image: url(../assets/Rectangle2.0.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cta-banner-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta-banner-wrapper h2 {
+  color: white;
+  line-height: 40px;
+}
+
+.cta-outline {
+  padding: 15px 50px;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/*SECTION RECOMMENDED*/
+
+section.recommended {
+  position: relative;
+}
+
+.title-container {
+  height: 30vh;
+  background-color: #f8f8f8;
+}
+
+.item-heading3 {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.item-heading2 {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.grid-products {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1.3fr 0.7fr;
+  gap: 0px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . ."
+    "cta-outline cta-outline cta-outline cta-outline";
+}
+
+.blank {
+  /* background-color: red; */
+  height: 400px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.card h4 {
+  margin-bottom: 10px;
+}
+
+.card-img {
+  height: 270px;
+  width: 270px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.price-product {
+  padding: 5px 10px;
+  background-color: #ff4f0421;
+  border-radius: 17px;
+}
+
+.price-product span {
+  color: #ff4f04;
+}
+
+button#recommended-cta {
+  color: black;
+  border: 1px solid black;
+  place-self: center;
+  grid-area: cta-outline;
+}
+
+/*NIKE SELCTION*/
+
+section.nike-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.nike-heading-wrapper {
+  margin-bottom: 50px;
+}
+
+.nike-wrapper { 
+  max-width: 1110px;
+  margin-right: auto;
+  margin-left: auto; 
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 40px 30px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "nike-card1 nike-card2 sale-nike sale-nike"
+    "nike-card3 nike-card4 sale-nike sale-nike";
+  }
+  
+.nike-card1 { 
+  position: relative;
+  grid-area: nike-card1; 
+}
+
+.nike-card1:hover .card-overlay { 
+  display: flex;
+}
+  
+.card-overlay {
+  position: absolute;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.30);
+  height: 100%;
+}
+
+button.atc {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ff4f04;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+button.atc:hover {
+  background-color: #ff4f048f;
+}
+
+button#cta-details {
+  background-color: transparent;
+  border: 2px solid #ff4f04;
+}
+
+button#cta-details:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+
+}
+
+.nike-card2 { 
+  grid-area: nike-card2; 
+}
+
+.nike-card3 { 
+  grid-area: nike-card3; 
+}
+
+.nike-card4 { 
+  grid-area: nike-card4; 
+}
+
+.sale-nike { 
+  grid-area: sale-nike;
+}
+
+.nike-card1, .nike-card2, .nike-card3, .nike-card4, .sale-nike {
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.nike-card1, .nike-card2, .nike-card3, .nike-card4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 20px 0 20px;
+}
+
+
+.nike-card-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nike-card-row h4 {
+  color: black;
+}
+
+.price-product-card {
+  padding: 5px 10px;
+  background-color: white;
+  border-radius: 17px;
+}
+
+.price-product-card span {
+  color: #ff4f04;
+  font-weight: 500;
+}
+
+.sale-nike {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+}
+
+.sale-nike h4, .sale-nike p {
+  color: black;
+}
+
+.nike-sale-img {
+  width: 500px;
+  height: 500px;
+}
+
+.sale {
+  padding: 7px 10px;
+  background-color: black;
+  border-radius: 17px;
+}
+
+.sale span {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+img.nike-card-img {
+  height: 214px;
+  width: 214px;
+}
+
+/*TRENDING SECTION*/
+
+section.trending {
+  margin: 50px 0 100px 0;
+}
+
+.trending-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 50px 40px;
+}
+
+.trending-card {
+  text-decoration: none;
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+.trending-img {
+  width: 250px;
+  height: 250px;
+}
+
+.trending-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.trending-row h4 {
+  color: black;
+}
+
+/*FOOTER*/
+
+footer {
+  padding: 70px 0;
+  background-color: #fafafa;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo-footer {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.col-footer {
+  max-width: 30%;
+}
+
+.col a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  padding: 5px 0;
+}
+
+.col a:hover {
+  text-decoration: underline;
+}
+
+.col h5, .col-footer h5 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.col-footer p {
+  margin-bottom: 10px;
+}
